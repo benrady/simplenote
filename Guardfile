@@ -17,8 +17,8 @@ spec_location = "spec/javascripts/%s_spec"
 # and all its dependencies to make all this shit work.
 
 guard 'jasmine-headless-webkit' do
-  watch(%r{^public/.*\.html$})
-  watch(%r{^spec/javascripts/helpers/.*\.js$})
+  watch(%r{^public/.*\.html$}) {"*"}
+  watch(%r{^spec/javascripts/helpers/.*\.js$}) {"*"}
   watch(%r{^public/js/(.*)\.js$}) { |m| newest_js_file(spec_location % m[1]) }
   watch(%r{^spec/javascripts/(.*)_spec\..*}) { |m| newest_js_file(spec_location % m[1]) }
   watch(%r{^spec/javascripts/(.*)_spec\..*}) { |m| newest_js_file(spec_location % m[1]) }

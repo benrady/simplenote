@@ -1,4 +1,5 @@
 beforeEach(function() {
   jasmine.getFixtures().fixturesPath = "public";
-  loadFixtures("index.html");
+  var appBody = $(readFixtures("index.html"));
+  setFixtures(appBody);
 });

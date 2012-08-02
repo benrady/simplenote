@@ -1,3 +1,15 @@
+#header {
+  border-bottom: 20px solid black;
+  padding-bottom: 20px;
+  font-size: 3em;
+}
+
+#header h1 {
+  width: 800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 #editor {
   margin-left:auto;
   margin-right:auto;
@@ -6,6 +18,7 @@
 
 #note-header input{
   width: 80%;
+  margin: 10px 0px 10px 0px;
 }
 
 #note-body textarea {
