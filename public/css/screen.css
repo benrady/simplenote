@@ -1,0 +1,14 @@
+#editor {
+  margin-left:auto;
+  margin-right:auto;
+  width: 800px;
+}
+
+#note-header input{
+  width: 80%;
+}
+
+#note-body textarea {
+  width:100%
+}
+
